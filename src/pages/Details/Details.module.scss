@@ -1,0 +1,29 @@
+.details {
+  width: 100%;
+
+  .collapse {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 76px;
+    margin-top: 34px;
+
+    header {
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+
+        @media screen and (max-width: 768px){
+          font-size: 13px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}

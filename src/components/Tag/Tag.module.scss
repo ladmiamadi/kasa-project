@@ -1,0 +1,22 @@
+@import "../../assets/style/colors.module";
+
+p.tag {
+  background-color: $pink;
+  width: 115px;
+  height: 25px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: $white;
+  padding: 3px 0;
+
+  @media screen and (max-width: 768px){
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 2px 0;
+  }
+}

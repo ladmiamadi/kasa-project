@@ -1,0 +1,23 @@
+@import "../../assets/style/colors.module";
+
+.container {
+  background-color: $grey;
+  border-radius: 25px;
+  padding: 56px 50px 43px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 29%));
+  justify-content: space-between;
+  row-gap: 50px;
+  column-gap: 20px;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(200px, 45%));
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    background-color: $white;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+    row-gap: 20px;
+  }
+}

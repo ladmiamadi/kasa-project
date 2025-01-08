@@ -1,0 +1,45 @@
+@import "../../assets/style/colors.module.scss";
+
+.error {
+  h2 {
+    font-size: 288px;
+    font-weight: 700;
+    text-align: center;
+    color: $pink;
+    margin-top: 100px;
+
+    @media screen and (max-width: 768px){
+     font-size: 96px;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    color: $pink;
+    margin-top: 139px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+
+    @media screen and (max-width: 768px){
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 500;
+    color: $black;
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    margin-top: 139px;
+    margin-bottom: 139px;
+
+    @media screen and (max-width: 768px){
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}

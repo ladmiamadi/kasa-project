@@ -1,0 +1,38 @@
+@import "../../assets/style/colors.module";
+
+.host {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .name {
+    color: $pink;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+    line-height: 25px;
+    width: 93px;
+
+    @media screen and (max-width: 768px){
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+
+  .image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    @media screen and (max-width: 768px){
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    margin-bottom: 0;
+  }
+}

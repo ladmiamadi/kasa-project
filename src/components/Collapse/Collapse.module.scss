@@ -1,0 +1,81 @@
+@import "../../assets/style/colors.module";
+
+.collapse {
+  width: 100%;
+  margin-bottom: 30px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 15px;
+    max-height: 54px;
+    background-color: $pink;
+    color: $white;
+    border-radius: 5px;
+    align-items: center;
+
+    .toggle {
+      background: none;
+      border: none;
+      color: $white;
+      font-size: 32px;
+      cursor: pointer;
+
+      @media screen and (max-width: 768px){
+        font-size: 20px;
+      }
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+
+      @media screen and (max-width: 768px){
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      padding: 10px;
+      max-height: 30px;
+    }
+  }
+
+  .content {
+    width: 100%;
+    background-color: $grey;
+    padding: 16px 20px;
+    color: $black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation: collapse 0.5s ease 0s 1 normal both;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+
+    @media screen and (max-width: 768px){
+      font-size: 12px;
+      line-height: 17px;
+      padding: 13px 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes collapse {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+}
