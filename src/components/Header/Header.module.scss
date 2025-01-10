@@ -24,6 +24,10 @@
         font-weight: 500;
         line-height: 34px;
 
+        &:hover {
+          text-decoration: underline;
+        }
+
         @media screen and (max-width: 768px){
           font-size: 12px;
           line-height: 17px;
