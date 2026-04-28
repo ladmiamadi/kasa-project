@@ -5,11 +5,7 @@ import { useFetch } from '../../hooks/useFetch.js';
 import Loader from '../Loader/Loader.jsx';
 
 const Cards = () => {
-     const {
-          data: apartments,
-          isLoading,
-          error,
-     } = useFetch('src/data/logements.json');
+     const { data: apartments, isLoading, error } = useFetch('/logements.json');
 
      if (error) {
           return <span>Il y a un problème!</span>;
